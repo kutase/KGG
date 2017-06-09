@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <style>
+  	canvas {
+  		border: black 3px solid;
+  	}
+
+  	input {
+  		width: 30px;
+  		height: 30px;
+  		margin-right: 10px;
+  		text-align: center;
+  	}
+
+  	.inputs {
+  		margin: 40px 0 40px 20px;
+  	}
+  </style>
+</head>
+<body>
+	<div class="inputs">
+		<span>R(fi) = </span>
+		<span><input type="text" oninput="setValue('a', this)" value="1"></span>
+		<span> * sin(<input type="text" oninput="setValue('b', this)" value="1"> * x + </span>
+		<span><input type="text" oninput="setValue('c', this)" value="0">) + </span>
+		<span><input type="text" oninput="setValue('k', this)" value="1"></span>
+		<span> * cos(<input type="text" oninput="setValue('d', this)" value="1"> * fi) </span>
+	</div>
+
+	<canvas id="graph" width="700" height="700"></canvas>
+
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
